@@ -1,0 +1,52 @@
+body {
+    text-align: center;
+    color: rgb(156, 43, 62);
+}
+
+h1 {
+    font-family: 'Redressed', cursive;
+}
+
+.square {
+    margin: 3px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background-image: url('./assets/wpbackgorund.png');
+    background-size: cover;
+}
+
+#logo {
+    margin-bottom: 20px;
+}
+
+.playerX,
+.playerO {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.playerX::after {
+    content: url('./assets/close\ \(1\).png');
+}
+
+.playerO::after {
+    content: url('./assets/circle-ring.png');
+}
+
+button {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Redressed', cursive;
+    font-weight: 700;
+    color: rgb(82, 16, 189);
+    border-radius: 10px;
+    background-color: rgba(156, 43, 62, 0.397);
+}
